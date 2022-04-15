@@ -15,7 +15,7 @@ public class Launch {
         String docBase = "src/main/webapp/";
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8080);
-        tomcat.setBaseDir("/tmp/tomcat");
+        tomcat.setBaseDir("/tmp/project-two");
         tomcat.addWebapp("/", new File(docBase).getAbsolutePath());
         tomcat.getConnector();
         tomcat.start();
